@@ -80,15 +80,16 @@ border:none;
   grid-area: header__theme-menu-list;
 }
 
-.header__theme-menu-list::after {
-  position:absolute;
+.header__theme-menu-list::after  {
+  position: absolute;
   content: '';
   display: block;
   width: 25px;
   height: 25px;
-  border: 1px solid brown;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color); 
   top: 0;
-  right: 0;
+  right:0;
   
 }
 
@@ -161,9 +162,21 @@ font-weight: 700;
 line-height: 23px;
 letter-spacing: 0em;
 text-align: left;
-
-
 }
+.header__subtitle::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color); 
+  bottom: 0;
+  left: 0;
+}
+
+
+
 .contents {
   display:flex;
   flex-direction: column;
