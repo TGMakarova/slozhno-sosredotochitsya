@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="light dark">
     <link rel="fonts" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">
+    <link rel="stylesheet" href="./styles/dark.css">
     <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
@@ -37,11 +37,16 @@
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
-              неон
+            неон
             </button>
           </li>
         </ul>
       </nav>
+      <div class="header__decorated-element">
+        <div class= "header__decorated-element-text"> REC</div>
+        <div class="header__decorated-element-circle"></div>
+          </div>
+
       <h1 class="header__title">no focus</h1>
       <span class="header__subtitle title-decor">Что делать, когда не можешь  делать ничего <br> Или почему нам так сложно 
          сконцентрироваться, особенно  когда очень надо</span>
@@ -50,7 +55,7 @@
     <main class="contents">   
       <section class="explanation">
         
-        <span class="explanation__subtitle-first">Почему сосредоточиться так сложно</span>
+        <span class="explanation__subtitle-first subtitle">Почему сосредоточиться так сложно</span>
         <article class="explanation__article-first">
           
         <span class="subtitle title-decor">Многозадачность</span>
@@ -74,7 +79,7 @@
       </section>
     
       <section class="reason">
-        <span class="reason__subtitle-first ">Что снижает концентрацию внимания?</span>
+        <span class="reason__subtitle-first subtitle">Что снижает концентрацию внимания?</span>
         <article class="reason__article-first">
         <span class="subtitle title-decor">Многозадачность</span>
         <span class="text">Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация 
@@ -100,7 +105,7 @@
       </section>
     
       <section class="recommendation">
-        <span class="recommendation__subtitle-first">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</span>
+        <span class="recommendation__subtitle-first subtitle">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</span>
         <span class="recommendation__subtitle-second subtitle title-decor">5 простых (на самом деле не очень) советов</span>
         <article class="recommendation__article-first">
         <span class="text text-accent title-decor">Представьте небо и облака</span>
@@ -111,7 +116,7 @@
             а не волноваться о потенциальных проблемах из будущего.</span>
             </article>
             <article class="recommendation__article-second" >
-        <span class="text text-accent title-decor">Включите музыку</span>
+        <span class="text title-decor">Включите музыку</span>
         <span class="text">Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями, которые
            тоже очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить
             плейлист в «белым шумом» или нейромузыкой.</span>
@@ -137,12 +142,11 @@
           </article>
           
       </section>
-      <!--
-      <h2 class="picture__subtitle title-decor">А можно в картинках?</h2>
-      -->
-      <section class="picture">
+    
+      <section>
+        <span class="subtitle title-decor">А можно в картинках?</span>
 
-        
+       <div class="picture">
       
       <img class ="picture__load picture__sunset" src="./images/sunset.png"  alt="Закат" loading="lazy"> 
       
@@ -154,7 +158,7 @@
      <img class ="picture__load picture__books" src="./images/books.png" alt="Книги" loading="lazy">
   
      <img class ="picture__load picture__street" src="./images/street.png" alt="Улица" loading="lazy">
-    
+    </div>
     </section>
   </main>
     <footer class="footer">
