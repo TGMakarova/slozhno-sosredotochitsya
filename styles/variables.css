@@ -1,11 +1,17 @@
 :root {
-  --accent-color:#ff0070;
-  --title-color:#DB00FF;
-  --text-color:#000028;
-  --bg-color:#000028;
-  --font-family: 'IBM Plex Mono';
+  --accent-color: #dd00ff;
+  --title-color: #ffc2e6;
+  --shadow-color:#ff0070;
+  --shadow-title-color: #ff0070;
+  --subtitle-color-main:#000028;
+  --subtitle-color-add:#ff0070;
+  --text-color: #353430;
+  --text-color-head:#353430;
+  --tape-decor:transparent;
+  
+  --font-family: IBM Plex Mono;
   --font-size:18px;
   --font-weight:400;
   --font-style:normal;
-  --padding:10px;
+  --padding:20px;
 }
