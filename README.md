@@ -1,2 +1,3 @@
-# slozhno-sosredotochitsya
-Проект "Сложно сосредоточиться"
+Мой третий проект
+
+Автор: [Макарова Т.Г.](https://github.com/TGMakarova/slozhno-sosredotochitsya "GitHub Репозиторий")
