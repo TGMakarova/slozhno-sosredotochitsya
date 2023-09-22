@@ -14,28 +14,5 @@
   --padding: 20px;
   --bg-color: #fff1f7;
   --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --bg-image: url(../images/cover-image-light.png);
+  
 }
-
-
-
-
-
-/*
-
-:root {
-  --accent-color: #dd00ff;
-  --title-color: #ffc2e6;
-  --shadow-color:#ff0070;
-  --shadow-title-color: #ff0070;
-  --subtitle-color-main:#000028;
-  --subtitle-color-add:#ff0070;
-  --text-color: #353430;
-  --text-color-head:#353430;
-  --tape-decor:transparent;
-  --font-size:18px;
-  --font-weight:400;
-  --font-style:normal;
-  --padding:20px;
-}
-*/

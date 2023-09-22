@@ -22,6 +22,22 @@
   --text-color-head: #ff0070;
   --tape-color: #ff0070;
   
-  background-image: url(../images/cover-image-dark.png);
+    background-image: url(../images/cover-image-dark.png);
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+  --accent-color: #ff0070;
+  --title-color: #dd00ff;
+  --shadow-color: #ff0070;
+  --shadow-title-color: #ff0070;
+  --subtitle-color-add: #000028;
+  --subtitle-color-main: #ff0070;
+  --text-color: #f1b2ce;
+  --text-color-head: #ff0070;
+  --tape-color: #ff0070;
+  
+    background-image: url(../images/cover-image-dark.png);
 
 }
