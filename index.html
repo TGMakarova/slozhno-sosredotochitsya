@@ -7,6 +7,8 @@
   <meta name="color-scheme" content="light dark">
   
   <link rel="icon" sizes="any" href="./images/favicon.ico">
+  <link rel="icon" sizes="any" href="./images/favicon.svg">
+  <link rel="icon" sizes="any" href="./images/mobile-icon.png">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/globals.css">
   <link rel="stylesheet" href="./styles/variables.css">
@@ -17,6 +19,7 @@
 </head>
 <body class="page">
   <header class="header decorated-zone">
+   
     <nav class="header__theme-menu">
       <ul class="header__theme-menu-list">
         <li class="header__theme-menu-item">
@@ -36,10 +39,11 @@
           </button>
         </li>
       </ul>
+      
     </nav>
-    <div class="header__decorated-element">
-      <span class="header__decorated-element-text"> rec</span>
-      <div class="header__decorated-element-circle"></div>
+    
+    <div class="header__decorated-element" aria-hidden="true">
+      <span class="header__decorated-element-text">rec</span>
     </div>
     <h1 class="header__title">no focus</h1>
     <p class="header__subtitle title-decor">Что делать, когда не можешь делать ничего <br> Или почему нам так сложно
@@ -50,12 +54,12 @@
       <h2 class="explanation__subtitle subtitle">Почему сосредоточиться так сложно</h2>
       <article class="paragraf">  
         <h2 class="subtitle title-decor subtitle-color-add">Многозадачность</h2>
-        <p class="text">Особенно сложно сосредоточиться, когда задач много и все они — важные.
+        <p class="text"> <span>Особенно сложно сосредоточиться, когда задач много и все они — важные.
           Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)?
-          А дело в том, что её просто не существует. Исследователи выяснили, что мозгу тяжело концентрироваться
+          А дело в том, что её просто не существует. Исследователи <span class="text-decor"> выяснили </span>, что мозгу тяжело концентрироваться
           даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм
           паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно:
-          ошибаемся и быстро устаём.</p>
+          ошибаемся и быстро устаём.</span></p>
       </article>
       <article class="paragraf">
         <h2 class="subtitle title-decor subtitle-color-add">Дофамин</h2>
@@ -158,7 +162,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer decorated-zone">
     <h2 class="footer__title">focus</h2>
   </footer>
   <script src="./scripts/script.js"></script>
