@@ -44,3 +44,13 @@ a {
 button {
   border: none;
 }
+
+:focus {
+  border:none;
+  outline-color: transparent;
+}
+
+:focus-visible {
+  border-style: none;
+  outline-color: transparent;
+}
