@@ -10,53 +10,61 @@
    сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-
-  --accent-color: #ff0070;
-  --tape-color: #ff0070;
-  --text-color: #f1b2ce;
-  --title-color: #dd00ff;
-  --shadow-color: #ff0070;
-  --shadow-title-color: #ff0070;
-  --subtitle-color-add: #000028;
-  --subtitle-color-main: #ff0070;
-  --text-color-head: #ff0070;
-    background-color: #00183f;
-
-.header {
-  background-image: url(../images/cover-image-dark.png);   
+        --bg-color: #00183f;
+        --accent-color: #ff0070;
+        --tape-color: #ff0070;
+        --text-color: #f1b2ce;
+        --title-color: #db00ff;
+        --shadow-color: #ff0070;
+        --shadow-title-color-big:#ff0070;
+        --shadow-title-color-small:#ff0070;
+        --subtitle-color-add: #000028;
+        --subtitle-color-main: #ff0070;
+        --text-color-head: #ff0070;
+  background-image: url(../images/cover-image-dark.png);    
 }
 
-.header__theme-menu-item:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-.header__theme-menu-item:focus {
+dark .header__theme-menu-button:focus {
   outline: none;
-  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
 }
+
+dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
 }
 
 @media (prefers-color-scheme:dark) {
-  --accent-color: #ff0070;
-  --tape-color: #ff0070;
-  --text-color: #f1b2ce;
-  --title-color: #dd00ff;
-  --shadow-color: #ff0070;
-  --shadow-title-color: #ff0070;
-  --subtitle-color-add: #000028;
-  --subtitle-color-main: #ff0070;
-  --text-color-head: #ff0070;
-    background-color: #00183f;
-
-.header {
-  background-image: url(../images/cover-image-dark.png);
-}
-.header__theme-menu-item:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
-}
-
-.header__theme-menu-item:focus {
-  outline: none;
-  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
-}
+  :root {
+    /*сохраните этот селектор в приведённом виде.
+     Так стили написанные ниже будут иметь больший вес,
+     чем стили в медиазапросе предпочтений пользователя*/
+         --bg-color: #00183f;
+         --accent-color: #ff0070;
+         --tape-color: #ff0070;
+         --text-color: #f1b2ce;
+         --title-color: #db00ff;
+         --shadow-color: #ff0070;
+         --shadow-title-color-big:#ff0070;
+         --shadow-title-color-small:#ff0070;
+         --subtitle-color-add: #000028;
+         --subtitle-color-main: #ff0070;
+         --text-color-head: #ff0070;
+    background-image: url(../images/cover-image-dark.png);    
+ }
+ 
+ dark .header__theme-menu-button:hover {
+   outline: 1px solid rgba(255, 0, 112, 0.4);
+ }
+ 
+ dark .header__theme-menu-button:focus {
+   outline: none;
+ }
+ 
+ dark .header__theme-menu-button:focus-visible {
+   border-bottom: 1px solid rgba(255, 0, 112, 0.4);
+ }
   }
+  

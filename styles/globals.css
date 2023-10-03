@@ -46,7 +46,7 @@ button {
 }
 
 :focus {
-  border:none;
+  border: none;
   outline-color: transparent;
 }
 

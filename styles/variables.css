@@ -1,8 +1,10 @@
 :root {
-  --accent-color: #dd00ff;
+  --accent-color: #FF8DCB;
   --title-color: #ffc2e6;
-  --shadow-title-color: #ff0070;
-  --shadow-color: #ff0070;
+  
+  --shadow-title-color-big:#ff0070;
+  --shadow-title-color-small:#ff8DCB;
+  --shadow-color: #ff8DCB;
   --subtitle-color-main: #353430;
   --subtitle-color-add: #353430;
   --text-color-head: #353430;
