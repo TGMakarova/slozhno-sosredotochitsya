@@ -1,7 +1,6 @@
 :root {
   --accent-color: #FF8DCB;
   --title-color: #ffc2e6;
-  
   --shadow-title-color-big:#ff0070;
   --shadow-title-color-small:#ff8DCB;
   --shadow-color: #ff8DCB;
@@ -16,5 +15,4 @@
   --blanco: 20px;
   --bg-color: #fff1f7;
   --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  
 }

@@ -1,21 +1,22 @@
-* {
-  /*
+* {/*
+  
   outline: 1px solid red;
  */
 }
 
 body {
   font-family: "IBM Plex Mono", monospace;
-  background-color: var(--bg-color, #fff1f7);
+  background-color: var(--bg-col                                                                                                or, #fff1f7);
 }
 
 .page {
   margin: auto;
-  width: 100vw;
+  width: 99vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url(../images/cover-image-light.png);
 }
 
 .header {
@@ -96,7 +97,9 @@ body {
   color: var(--text-color-head, #353430);
   cursor: pointer;
 }
-
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
 .header__theme-menu-button:hover {
   outline: 1px solid rgba(50, 49, 45, 1);
 }
@@ -109,9 +112,6 @@ body {
   border-bottom: 1px solid rgba(50, 49, 45, 1);
 }
 
-.header__theme-menu-button_active:active {
-  pointer-events: none;
-}
 
 .header__decorated-element {
   display: flex;
@@ -416,7 +416,7 @@ body {
   .page {
     max-width: 768px;
   }
-
+  
   .header__theme-menu {
     justify-self: self-end;
     align-self: center;
@@ -424,54 +424,47 @@ body {
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
     align-self: center;
-    align-items: center;
     gap: 13px;
     justify-self: center;
-    justify-content: center;
   }
 
   .header__title {
     text-shadow: 4px 4px 0px var(--shadow-title-color-small, #ff8dcb);
   }
+
   .explanation {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: min-content 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
     grid-template-areas:
       "exp-subtitle  exp-task"
       " . exp-dofamin";
   }
 
+  .reason__subtitle {
+    margin-bottom: 0;
+  }
+
   .reason {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: min-content 1fr 1fr 1fr;
-    column-gap: 20px;
+    grid-template-rows: min-content min-content min-content;
     grid-template-areas:
       "rea-subtitle .   "
       " rea-paragraf-tasks rea-paragraf-tasks"
       "rea-paragraf-food rea-paragraf-food"
       " rea-paragraf-gadget rea-paragraf-gadget";
+      row-gap: 20px;
   }
 
   .recommendation {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content;
-    column-gap: 20px;
-    row-gap: 20px;
     grid-template-areas:
-      "rec-subtitle rec-subtitle-advice"
-      "rec-subtitle         rec-paragraf-sky"
-      " rec-subtitle          rec-paragraf-music"
-      " rec-subtitle         rec-paragraf-walk"
-      " rec-subtitle          rec-paragraf-meal"
-      " rec-subtitle   rec-paragraf-read";
+      "rec-subtitle      rec-subtitle-advice"
+      "rec-subtitle      rec-paragraf-sky"
+      " rec-subtitle     rec-paragraf-music"
+      " rec-subtitle     rec-paragraf-walk"
+      " rec-subtitle     rec-paragraf-meal"
+      " rec-subtitle     rec-paragraf-read";
   }
 
   .footer__title {
@@ -480,10 +473,11 @@ body {
 }
 
 @media screen and (375px<=width<600px) {
+  
   .page {
     max-width: 375px;
   }
-
+  
   .header {
     padding: 10px;
   }
@@ -501,8 +495,6 @@ body {
     margin-right: 13px;
     gap: 13px;
     justify-self: center;
-
-    justify-content: center;
   }
 
   .decorated-zone::before {
@@ -537,20 +529,16 @@ body {
   }
 
   .explanation {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content min-content;
-    row-gap: 20px;
     grid-template-areas:
       "exp-subtitle"
       "exp-task"
       "exp-dofamin";
   }
-
+  
   .reason {
     margin-top: 50px;
-
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content min-content min-content;
     row-gap: 20px;
@@ -560,15 +548,16 @@ body {
       "rea-paragraf-food"
       "rea-paragraf-gadget";
   }
-  .reason__subtitle {
-    margin-bottom: 0;
+
+  .reason__subtitle { 
+    margin-bottom: 0;  
   }
+
   .recommendation {
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
-    row-gap: 20px;
     grid-template-areas:
       "rec-subtitle"
       "rec-subtitle-advice"
@@ -626,7 +615,6 @@ body {
     grid-column-end: span 1;
   }
   .footer {
-    min-height: 668px;
     padding: 10px;
   }
 
