@@ -5,7 +5,8 @@ body {
 
 .page {
   margin: auto;
-  width: 99vw;
+  width: 100%;
+  max-width: 1024px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +16,9 @@ body {
 
 .header {
   width: 100%;
+  
+  
+
   min-height: 668px;
   height: 100vh;
   padding: var(--blanco);
@@ -46,7 +50,7 @@ body {
   align-items: center;
   display: flex;
   margin: auto;
-  gap: 36px;
+  gap: 26px;
 }
 
 .decorated-zone::before {
@@ -110,7 +114,7 @@ body {
   display: flex;
   position: absolute;
   top: 20px;
-  right: 45px;
+  right: 48px;
 }
 
 .header__decorated-element-text {
@@ -126,8 +130,8 @@ body {
 .header__decorated-element::after {
   display: flex;
   content: " ";
-  top: 7px;
-  right: -17px;
+  top: 8px;
+  right: -19px;
   position: absolute;
   width: 9px;
   height: 9px;
@@ -206,8 +210,13 @@ body {
 }
 
 .text-decor:hover {
+  /*
   text-decoration: underline;
+  
   color: var(--text-color, #353430);
+  */
+  display: inline-block;
+  border-bottom: 1px solid var(--text-color, #353430);
 }
 
 .text-decor:focus-visible {
@@ -398,14 +407,14 @@ body {
   line-height: 82.5%;
   /* 129.525px */
 }
-
+/*
 @media screen and (1000px<=width) {
   .page {
     max-width: 1024px;
   }
 }
-
-@media screen and (600px<=width<1000px) {
+*/
+@media screen and (782px<=width<1038px) {
   .page {
     max-width: 768px;
   }
@@ -465,7 +474,7 @@ body {
   }
 }
 
-@media screen and (375px<=width<600px) {
+@media screen and (375px<=width<782px) {
   .page {
     max-width: 375px;
   }
@@ -561,7 +570,9 @@ body {
   }
 
   .recommendation__subtitle {
+    /*
     margin-bottom: -1px;
+    */
   }
 
   .picture {
@@ -616,3 +627,4 @@ body {
     font-size: var(--title-font-size);
   }
 }
+*{outline: 1px solid yellow;}
