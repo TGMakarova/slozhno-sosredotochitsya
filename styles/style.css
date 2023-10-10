@@ -130,8 +130,8 @@ body {
 .header__decorated-element::after {
   display: flex;
   content: " ";
-  top: 8px;
-  right: -19px;
+  top: 9px;
+  right: -17px;
   position: absolute;
   width: 9px;
   height: 9px;
@@ -157,6 +157,7 @@ body {
   font-style: var(--font-style, normal);
   font-weight: 700;
   line-height: 82.5%;
+  flex-wrap: nowrap;
 }
 
 .header__subtitle {
@@ -627,3 +628,6 @@ body {
     font-size: var(--title-font-size);
   }
 } 
+* {
+  outline: 1px solid yellow;
+}
