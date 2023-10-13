@@ -6,7 +6,7 @@ body {
 .page {
   margin: auto;
   width: 99%;
-  max-width: 1024px;
+  width: 1024px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
