@@ -404,6 +404,12 @@ body {
   /* 129.525px */
 }
 
+@media screen  and (822px<=width) {
+  .page {
+    max-width: 1024px;
+  }
+
+
 @media screen  and (630px<=width<822px) {
   .page {
     max-width: 768px;
@@ -617,3 +623,4 @@ body {
     font-size: var(--title-font-size);
   }
 } 
+*{outline:1px solid yellow;}
