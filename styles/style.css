@@ -408,7 +408,7 @@ body {
   .page {
     max-width: 1024px;
   }
-
+}
 
 @media screen  and (630px<=width<822px) {
   .page {
