@@ -409,11 +409,12 @@ body {
       "rea-subtitle .   "
       " rea-contents  rea-contents";
   }
+
   .reason__contents {
     grid-template-columns: 1fr;
     flex-direction: column;
-    row-gap: 20px;
   }
+  
   .recommendation {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
