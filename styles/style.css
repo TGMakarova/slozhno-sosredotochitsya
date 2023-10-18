@@ -190,7 +190,7 @@ body {
 
 .paragraf {
   margin-top: 20px;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
