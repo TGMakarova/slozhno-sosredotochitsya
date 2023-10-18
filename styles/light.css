@@ -49,15 +49,20 @@
     background-image: url(../images/cover-image-light.png);
   }
 
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
-  }
-
   .header__theme-menu-button:focus {
     outline: none;
   }
 
   .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid rgba(50, 49, 45, 0.4);
+    border-bottom: 1px solid var(--text-color-head, #353430);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(50, 49, 45, 0.4);
+  }
+
+  .header__theme-menu-button:active {
+    outline: 1px solid var(--text-color-head, #353430);
+    padding: 0 12px;
   }
 }

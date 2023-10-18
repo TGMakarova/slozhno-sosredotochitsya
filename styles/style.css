@@ -101,11 +101,16 @@ body {
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid rgba(50, 49, 45, 1);
+  border-bottom: 1px solid var(--text-color-head, #353430);
 }
 
 .header__theme-menu-button:hover {
   outline: 1px solid rgba(50, 49, 45, 1);
+}
+
+.header__theme-menu-button:active {
+  outline: 1px solid var(--text-color-head, #353430);
+  padding: 0 12px;
 }
 
 .header__decorated-element {
@@ -185,7 +190,7 @@ body {
 
 .paragraf {
   margin-top: 20px;
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   gap: 10px;
 }
@@ -210,7 +215,6 @@ body {
 }
 
 .text-decor:hover {
-  display: inline-block;
   border-bottom: 1px solid var(--text-color, #353430);
 }
 
@@ -235,52 +239,41 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content 1fr;
   column-gap: 20px;
-
-  grid-template-areas:
-    "exp-subtitle  exp-task exp-task"
-    " . exp-dofamin exp-dofamin";
+  grid-template-areas: "exp-subtitle  exp-contents exp-contents";
 }
 
 .explanation__subtitle {
   grid-area: exp-subtitle;
 }
 
-.explanation .paragraf:first-of-type {
-  margin-top: 0;
-  grid-area: exp-task;
-}
-
-.explanation .paragraf:last-of-type {
-  grid-area: exp-dofamin;
+.explanation__contents {
+  margin-top: -20px;
+  grid-area: exp-contents;
 }
 
 .reason {
   margin-top: 80px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content 1fr;
   column-gap: 20px;
   grid-template-areas:
     "rea-subtitle .  . "
-    "rea-paragraf-tasks rea-paragraf-food rea-paragraf-gadget";
+    " rea-contents rea-contents rea-contents";
+}
+
+.reason__contents {
+  display: grid;
+  flex-direction: row;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  grid-area: rea-contents;
 }
 
 .reason__subtitle {
   grid-area: rea-subtitle;
-}
-
-.reason .paragraf:first-of-type {
-  grid-area: rea-paragraf-tasks;
-}
-
-.reason .paragraf:nth-of-type(2) {
-  grid-area: rea-paragraf-food;
-}
-
-.reason .paragraf:last-of-type {
-  grid-area: rea-paragraf-gadget;
 }
 
 .recommendation {
@@ -288,15 +281,11 @@ body {
   margin-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, min-content);
+  grid-template-rows: repeat(2, min-content);
   column-gap: 20px;
   grid-template-areas:
     "rec-subtitle    rec-subtitle-advice  rec-subtitle-advice"
-    "rec-subtitle    rec-paragraf-sky     rec-paragraf-sky"
-    " rec-subtitle   rec-paragraf-music   rec-paragraf-music"
-    " rec-subtitle   rec-paragraf-walk    rec-paragraf-walk"
-    " rec-subtitle   rec-paragraf-meal    rec-paragraf-meal"
-    " rec-subtitle   rec-paragraf-read    rec-paragraf-read";
+    " rec-subtitle rec-contents rec-contents";
 }
 .recommendation__subtitle {
   grid-area: rec-subtitle;
@@ -306,23 +295,8 @@ body {
   grid-area: rec-subtitle-advice;
 }
 
-.recommendation .paragraf:first-of-type {
-  grid-area: rec-paragraf-sky;
-}
-
-.recommendation .paragraf:nth-of-type(2) {
-  grid-area: rec-paragraf-music;
-}
-
-.recommendation .paragraf:nth-of-type(3) {
-  grid-area: rec-paragraf-walk;
-}
-
-.recommendation .paragraf:nth-of-type(4) {
-  grid-area: rec-paragraf-meal;
-}
-.recommendation .paragraf:last-of-type {
-  grid-area: rec-paragraf-read;
+.recommendation__contents {
+  grid-area: rec-contents;
 }
 
 .picture {
@@ -371,7 +345,6 @@ body {
 }
 
 .picture .picture__load:last-child {
-  padding-right: 0;
   grid-row-start: 3;
   grid-row-end: span 1;
   grid-column-start: 2;
@@ -403,7 +376,7 @@ body {
   /* 129.525px */
 }
 
-@media screen and (630px<=width<822px) {
+@media screen and (width<822px) {
   .page {
     max-width: 768px;
   }
@@ -427,34 +400,25 @@ body {
 
   .explanation {
     grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "exp-subtitle  exp-task"
-      " . exp-dofamin";
-  }
-
-  .reason__subtitle {
-    margin-bottom: 0;
+    grid-template-areas: "exp-subtitle  exp-contents";
   }
 
   .reason {
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(4, min-content);
     grid-template-areas:
       "rea-subtitle .   "
-      " rea-paragraf-tasks   rea-paragraf-tasks"
-      "rea-paragraf-food     rea-paragraf-food"
-      " rea-paragraf-gadget  rea-paragraf-gadget";
+      " rea-contents  rea-contents";
   }
-
+  .reason__contents {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    row-gap: 20px;
+  }
   .recommendation {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "rec-subtitle      rec-subtitle-advice"
-      "rec-subtitle      rec-paragraf-sky"
-      " rec-subtitle     rec-paragraf-music"
-      " rec-subtitle     rec-paragraf-walk"
-      " rec-subtitle     rec-paragraf-meal"
-      " rec-subtitle     rec-paragraf-read";
+      "rec-subtitle      rec-contents";
   }
 
   .footer__title {
@@ -471,21 +435,6 @@ body {
     padding: 10px;
   }
 
-  .header__theme-menu {
-    justify-self: self-end;
-    align-self: center;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    margin-right: 6.5px;
-    gap: 13px;
-    justify-self: center;
-  }
-
   .decorated-zone::before {
     top: 10px;
     right: 10px;
@@ -497,10 +446,7 @@ body {
   }
 
   .header__title {
-    margin-left: 0;
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-
-    text-shadow: 4px 4px 0px var(--shadow-title-color-small, #ff8dcb);
     font-size: var(--title-font-size);
   }
 
@@ -521,11 +467,9 @@ body {
 
   .explanation {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, min-content);
     grid-template-areas:
       "exp-subtitle"
-      "exp-task"
-      "exp-dofamin";
+      "exp-contents";
   }
   .explanation__subtitle {
     margin-bottom: 20px;
@@ -534,27 +478,19 @@ body {
   .reason {
     margin-top: 50px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, min-content);
     grid-template-areas:
       "rea-subtitle"
-      "rea-paragraf-tasks"
-      "rea-paragraf-food"
-      "rea-paragraf-gadget";
+      "rea-contents";
   }
 
   .recommendation {
     margin-top: 50px;
     margin-bottom: 50px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, min-content);
     grid-template-areas:
       "rec-subtitle"
       "rec-subtitle-advice"
-      "rec-paragraf-sky"
-      "rec-paragraf-music"
-      "rec-paragraf-walk"
-      "rec-paragraf-meal"
-      "rec-paragraf-read";
+      "rec-contents";
   }
 
   .recommendation__subtitle {
@@ -565,14 +501,10 @@ body {
     grid-template-columns: 1fr;
     margin-top: 10px;
     margin-bottom: 40px;
-    display: grid;
     row-gap: 10px;
   }
 
   .picture .picture__load:first-child {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
     grid-column-end: span 1;
   }
 
@@ -580,25 +512,21 @@ body {
     grid-row-start: 2;
     grid-row-end: span 1;
     grid-column-start: 1;
-    grid-column-end: span 1;
   }
 
   .picture .picture__load:nth-child(3) {
     grid-row-start: 3;
     grid-row-end: span 1;
     grid-column-start: 1;
-    grid-column-end: span 1;
   }
 
   .picture .picture__load:nth-child(4) {
     grid-row-start: 4;
     grid-row-end: span 1;
     grid-column-start: 1;
-    grid-column-end: span 1;
   }
 
   .picture .picture__load:last-child {
-    padding-right: 0;
     grid-row-start: 5;
     grid-row-end: span 1;
     grid-column-start: 1;
@@ -610,7 +538,6 @@ body {
   }
 
   .footer__title {
-    text-shadow: 4px 4px 0px var(--shadow-title-color-small, #ff8dcb);
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-size: var(--title-font-size);
   }
