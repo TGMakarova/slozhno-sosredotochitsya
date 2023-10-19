@@ -27,7 +27,7 @@
 
 .theme_dark .header__theme-menu-button_type_dark {
   outline: 1px solid #ff0070;
-  padding: 2px 12px;
+  padding: 3cqw 12px;
 }
 
 .theme_dark .header__theme-menu-button_type_light {
@@ -64,7 +64,7 @@
 
   .header__theme-menu-button_type_dark {
     outline: 1px solid #ff0070;
-    padding: 2px 12px;
+    padding: 3px 12px;
   }
 
   .header__theme-menu-button_type_light {
