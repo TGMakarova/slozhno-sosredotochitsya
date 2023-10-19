@@ -47,7 +47,7 @@ body {
   align-items: center;
   display: flex;
   margin: auto;
-  gap: 25px;
+  gap: 24px;
 }
 
 .decorated-zone::before {
