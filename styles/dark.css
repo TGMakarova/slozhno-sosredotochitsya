@@ -25,9 +25,13 @@
   outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-.theme_dark .header__theme-menu-button:active {
+.theme_dark .header__theme-menu-button_type_dark {
   outline: 1px solid #ff0070;
-  padding: 0 12px;
+  padding: 0 13px;
+}
+
+.theme_dark .header__theme-menu-button_type_light {
+  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,8 +62,12 @@
     outline: 1px solid rgba(255, 0, 112, 0.4);
   }
 
-  .header__theme-menu-button:active {
+  .header__theme-menu-button_type_dark {
     outline: 1px solid #ff0070;
-    padding: 0 12px;
+    padding: 0 13px;
+  }
+
+  .header__theme-menu-button_type_light {
+    outline: none;
   }
 }

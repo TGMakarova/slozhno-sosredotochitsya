@@ -29,6 +29,11 @@
   border-bottom: 1px solid rgba(50, 49, 45, 0.4);
 }
 
+.theme_light .header__theme-menu-button_type_light {
+  outline: 1px solid var(--text-color-head, #353430);
+  padding: 0 13px;
+}
+
 @media (prefers-color-scheme: light) {
   .page {
     --accent-color: #ff8dcb;
@@ -61,8 +66,8 @@
     outline: 1px solid rgba(50, 49, 45, 0.4);
   }
 
-  .header__theme-menu-button:active {
+  .header__theme-menu-button_type_light {
     outline: 1px solid var(--text-color-head, #353430);
-    padding: 0 12px;
+    padding: 0 13px;
   }
 }
