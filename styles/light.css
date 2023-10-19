@@ -31,7 +31,7 @@
 
 .theme_light .header__theme-menu-button_type_light {
   outline: 1px solid var(--text-color-head, #353430);
-  padding: 0 13px;
+  padding: 2px 12px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -68,6 +68,6 @@
 
   .header__theme-menu-button_type_light {
     outline: 1px solid var(--text-color-head, #353430);
-    padding: 0 13px;
+    padding: 2px 12px;
   }
 }

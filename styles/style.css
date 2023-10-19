@@ -379,13 +379,13 @@ body {
   .header__theme-menu {
     justify-self: self-end;
     align-self: center;
-    margin-right: 6.5px;
+    margin-right: 6px;
   }
 
   .header__theme-menu-list {
     flex-direction: column;
     align-self: center;
-    gap: 13px;
+    gap: 12px;
     justify-self: center;
   }
 
