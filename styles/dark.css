@@ -27,10 +27,14 @@
 
 .theme_dark .header__theme-menu-button_type_dark {
   outline: 1px solid #ff0070;
-  padding: 3cqw 12px;
+  padding: 3px 12px;
 }
 
 .theme_dark .header__theme-menu-button_type_light {
+  outline: none;
+}
+
+.theme_dark .header__theme-menu-button_type_auto {
   outline: none;
 }
 
@@ -62,12 +66,16 @@
     outline: 1px solid rgba(255, 0, 112, 0.4);
   }
 
-  .header__theme-menu-button_type_dark {
-    outline: 1px solid #ff0070;
-    padding: 3px 12px;
-  }
-
   .header__theme-menu-button_type_light {
     outline: none;
+  }
+
+  .header__theme-menu-button_type_dark {
+    outline: none;
+  }
+
+  .header__theme-menu-button_type_auto {
+    outline: 1px solid #ff0070;
+    padding: 3px 12px;
   }
 }

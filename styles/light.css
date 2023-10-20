@@ -34,6 +34,15 @@
   padding: 3px 12px;
 }
 
+.theme_light .header__theme-menu-button_type_dark {
+  outline: none;
+}
+
+.theme_light .header__theme-menu-button_type_auto {
+    outline: none;
+  }
+
+
 @media (prefers-color-scheme: light) {
   .page {
     --accent-color: #ff8dcb;
@@ -66,7 +75,15 @@
     outline: 1px solid rgba(50, 49, 45, 0.4);
   }
 
+  .header__theme-menu-button_type_dark {
+    outline: none;
+  }
+
   .header__theme-menu-button_type_light {
+    outline: none;
+  }
+
+  .header__theme-menu-button_type_auto {
     outline: 1px solid var(--text-color-head, #353430);
     padding: 3px 12px;
   }
