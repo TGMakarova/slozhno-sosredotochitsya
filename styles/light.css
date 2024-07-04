@@ -18,7 +18,8 @@
 }
 
 .theme_light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.4);
+  outline: 1px solid rgba(50, 49, 45, 0.4); 
+  padding: 3px 12px; 
 }
 
 .theme_light .header__theme-menu-button:focus {
@@ -27,6 +28,7 @@
 
 .theme_light .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid rgba(50, 49, 45, 0.4);
+  padding: 3px 12px;
 }
 
 .theme_light .header__theme-menu-button_type_light {
@@ -69,10 +71,12 @@
 
   .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid var(--text-color-head, #353430);
+    padding: 3px 12px;
   }
 
   .header__theme-menu-button:hover {
     outline: 1px solid rgba(50, 49, 45, 0.4);
+    padding: 3px 12px;
   }
 
   .header__theme-menu-button_type_dark {

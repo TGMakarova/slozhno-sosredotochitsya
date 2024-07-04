@@ -19,10 +19,12 @@
 
 .theme_dark .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid #ff0070;
+  padding: 3px 12px;
 }
 
 .theme_dark .header__theme-menu-button:hover {
   outline: 1px solid rgba(255, 0, 112, 0.4);
+  padding: 3px 12px;
 }
 
 .theme_dark .header__theme-menu-button_type_dark {
@@ -60,10 +62,12 @@
 
   .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid #ff0070;
+    padding: 3px 12px;
   }
 
   .header__theme-menu-button:hover {
     outline: 1px solid rgba(255, 0, 112, 0.4);
+    padding: 3px 12px;
   }
 
   .header__theme-menu-button_type_light {

@@ -1,7 +1,3 @@
-body {
-  font-family: "IBM Plex Mono", monospace;
-  background-color: var(--bg-color, #fff1f7);
-}
 
 .page {
   margin: auto;
@@ -47,7 +43,7 @@ body {
   align-items: center;
   display: flex;
   margin: auto;
-  gap: 23px;
+  gap: 19px;
 }
 
 .decorated-zone::before {
@@ -311,35 +307,35 @@ body {
   height: 100%;
 }
 
-.picture .picture__load:first-child {
+.picture__sunset {
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column-start: 1;
   grid-column-end: span 2;
 }
 
-.picture .picture__load:nth-child(2) {
+.picture__ice-cream {
   grid-row-start: 1;
   grid-row-end: span 2;
   grid-column-start: 3;
   grid-column-end: span 1;
 }
 
-.picture .picture__load:nth-child(3) {
+.picture__tape {
   grid-row-start: 2;
   grid-row-end: span 2;
   grid-column-start: 1;
   grid-column-end: span 1;
 }
 
-.picture .picture__load:nth-child(4) {
+.picture__books {
   grid-row-start: 2;
   grid-row-end: span 1;
   grid-column-start: 2;
   grid-column-end: span 1;
 }
 
-.picture .picture__load:last-child {
+.picture__street {
   grid-row-start: 3;
   grid-row-end: span 1;
   grid-column-start: 2;
@@ -502,29 +498,29 @@ body {
     row-gap: 10px;
   }
 
-  .picture .picture__load:first-child {
+  .picture__sunset {
     grid-column-end: span 1;
   }
 
-  .picture .picture__load:nth-child(2) {
+  .picture__ice-cream{
     grid-row-start: 2;
     grid-row-end: span 1;
     grid-column-start: 1;
   }
 
-  .picture .picture__load:nth-child(3) {
+  .picture__tape {
     grid-row-start: 3;
     grid-row-end: span 1;
     grid-column-start: 1;
   }
 
-  .picture .picture__load:nth-child(4) {
+  .picture__books {
     grid-row-start: 4;
     grid-row-end: span 1;
     grid-column-start: 1;
   }
 
-  .picture .picture__load:last-child {
+  .picture__street {
     grid-row-start: 5;
     grid-row-end: span 1;
     grid-column-start: 1;
