@@ -1,5 +1,7 @@
-
-.page {
+/*  {
+outline: 1px solid yellow;
+}*/
+.page.theme_light {
   margin: auto;
   max-width: 1024px;
   background-position: center;
@@ -7,6 +9,21 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --shadow-title-color-big: #ff0070;
+  --shadow-title-color-small: #ff8dcb;
+  --shadow-color: #ff8dcb;
+  --subtitle-color-main: #353430;
+  --subtitle-color-add: #353430;
+  --text-color-head: #353430;
+  --text-color: #353430;
+  --tape-color: transparent;
+  --font-size: 18px;
+  --font-weight: 400;
+  --font-style: normal;
+  --blanco: 20px;
+  --bg-color: #fff1f7;
 }
 
 .header {
@@ -43,7 +60,7 @@
   align-items: center;
   display: flex;
   margin: auto;
-  gap: 19px;
+  gap: 12px;
 }
 
 .decorated-zone::before {
@@ -90,6 +107,21 @@
 }
 .header__theme-menu-button_active {
   pointer-events: none;
+}
+
+.header__theme-menu-button_type_dark {
+  outline: none;
+  padding: 3px 12px;
+}
+
+.header__theme-menu-button_type_light {
+  outline: none;
+  padding: 3px 12px;
+}
+
+.header__theme-menu-button_type_auto {
+  outline: 1px solid var(--text-color-head, #353430);
+  padding: 3px 12px;
 }
 
 .header__theme-menu-button:focus {
